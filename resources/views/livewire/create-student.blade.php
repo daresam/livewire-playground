@@ -17,7 +17,7 @@
                         <div class="grid grid-cols-6 gap-6">
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                                <input type="text" id="name"
+                                <input type="text" id="name" wire:model='name'
                                     class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm @error('name') text-red-900 focus:ring-red-500 focus:border-red-500 border-red-300 @enderror" />
                                 <p class="mt-1 text-sm text-red-500">
                                     Error Message
@@ -28,14 +28,14 @@
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="email" class="block text-sm font-medium text-gray-700">Email
                                     Address</label>
-                                <input type="email" id="email" autocomplete="email"
+                                <input type="email" id="email" autocomplete="email" wire:model='email'
                                     class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm @error('email') text-red-900 focus:ring-red-500 focus:border-red-500 border-red-300 @enderror" />
                             </div>
 
 
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="class_id" class="block text-sm font-medium text-gray-700">Class</label>
-                                <select id="class_id"
+                                <select id="class_id" wire:model='class_id'
                                     class="mt-1 block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm @error('class_id') text-red-900 focus:ring-red-500 focus:border-red-500 border-red-300 @enderror">
                                     <option value="">Select a Class</option>
                                     <option value="">Class 1</option>
@@ -45,7 +45,7 @@
 
                             <div class="col-span-6 sm:col-span-3">
                                 <label for="section_id" class="block text-sm font-medium text-gray-700">Section</label>
-                                <select id="section_id"
+                                <select id="section_id" wire:model='section_id'
                                     class="mt-1 block w-full bg-white border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm @error('section_id') text-red-900 focus:ring-red-500 focus:border-red-500 border-red-300 @enderror">
                                     <option value="">
                                         Select a Section

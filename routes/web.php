@@ -17,7 +17,7 @@ Route::view('profile', 'profile')
 
 Route::middleware('auth')->group(function () {
     Route::get('students', ListStudents::class)->name('students.index');
-    Route::get('students/create', CreateStudent::class)->name('students.index');
+    Route::get('students/create', CreateStudent::class)->name('students.create');
 });
 
 require __DIR__.'/auth.php';

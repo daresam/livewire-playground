@@ -3,11 +3,9 @@
 namespace App\Livewire;
 
 use App\Models\Student;
-use Livewire\Attributes\Layout;
 use Livewire\Component;
 use Livewire\WithPagination;
 
-#[Layout('layouts.app')]
 class ListStudents extends Component
 {
     use WithPagination;
